@@ -10,7 +10,19 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class ClientesApplication {
+/*
+* A criação do método abaixo permite ser o entrypoint da aplicação
+* para execução como Command Line de alguma instrução, como no caso
+* abaixo, a persistência de uma entidade.
+* */
 
+//    @Bean
+//    public CommandLineRunner run (@Autowired ClienteRepository repository) {
+//        return args -> {
+//            Cliente cliente = Cliente.builder().cpf("00988589878").nome("BLITZ FIRMINO").build();
+//            repository.save(cliente);
+//        };
+//    }
     public static void main(String[] args) {
         SpringApplication.run(ClientesApplication.class, args);
 
