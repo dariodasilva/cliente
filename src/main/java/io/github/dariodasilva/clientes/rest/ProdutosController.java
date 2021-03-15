@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package io.github.dariodasilva.clientes.rest;
 
 import io.github.dariodasilva.clientes.model.entity.Produtos;
@@ -31,7 +30,5 @@ public class ProdutosController {
     public Produtos obterProdutosPorId( @PathVariable Integer id){
         return repository.findById(id).orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
-=======
-package io.github.dariodasilva.clientes.rest;public class ProdutosController {
->>>>>>> 793e7edeb01c83e83d6549695821d286f279a750
+
 }
