@@ -18,11 +18,8 @@ public class Produtos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-<<<<<<< HEAD
+
     @Column( name = "nome_produto",nullable = false, length = 200)
-=======
-    @Column( nullable = false, length = 200)
->>>>>>> 793e7edeb01c83e83d6549695821d286f279a750
     private String nomeProduto;
 
     @Column( nullable = false, length = 150)
